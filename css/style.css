@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+
+/* BODY */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* ------------------------------------- */
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h1 {
+    text-align: center;
+    padding: 7px;
+    margin: 30px;
+    font-weight: 500;
+}
+
+.section-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.35);
+    margin: 30px;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 450px;
+    height: 150px;
+}
+
+label {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.div-container .input {
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.div-container .btn-agregar {
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 10px;
+    background: rgb(61, 234, 61);
+    line-height: 2;
+}
+
+.div-container .btn-agregar:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+/* MAIN - JS*/
+
+.tareas-container {
+    display: none;
+}
+
+.tareas-container.visible {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.div-tareas {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 7px;
+}
+
+.div-tareas p {
+    font-size: 1.13rem;
+    line-height: 2;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 7px;
+}
+
+.div-btn .btn-eliminar,
+.div-btn .btn-modificar {
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.div-btn .btn-modificar {
+    background: rgb(61, 234, 194);
+    margin-right: 10px;
+}
+
+.div-btn .btn-eliminar {
+    background: rgb(234, 61, 61);
+}
+
+.div-btn .btn-eliminar:hover,
+.div-btn .btn-modificar:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    font-weight: 500;
+}

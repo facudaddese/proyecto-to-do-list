@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Lista de tareas</h1>
+
+        <section class="section-principal">
+            <form autocomplete="off">
+                <label>Ingresar aquí la nueva tarea</label>
+                <div class="div-container">
+                    <input type="text" class="input" id="input" placeholder="Por ej: corregir bugs">
+                    <button type="button" class="btn-agregar" id="btn-agregar">Agregar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="tareas-container"></section>
+    </main>
+
+    <footer>
+        <p>To do list by
+            <a href="https://www.linkedin.com/in/facundo-d-addese-797b241aa/" target="_blank">Facundo D'addese</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
