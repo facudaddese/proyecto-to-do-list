@@ -1,10 +1,13 @@
 const input = document.getElementById("input");
 const btnAgregar = document.getElementById("btn-agregar");
 const tareasContainer = document.getElementById("tareas-container");
+const footer = document.getElementById("footer");
 
-btnAgregar.addEventListener("click", () => {
+btnAgregar.addEventListener("click", (event) => {
 
     if (input.value.trim() != "") {
+
+        footer.classList.remove("fixed");
 
         const tareaContainer = document.createElement("div");
         tareaContainer.classList.add("tareas-container", "visible");
@@ -73,5 +76,13 @@ btnAgregar.addEventListener("click", () => {
                 }
             });
         });
+    } else {
+        Swal.fire({
+            title: "La tarea no puede quedar vacía",
+            icon: "warning",
+            showCancelButton: false,
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "Ok"
+        })
     }
 })

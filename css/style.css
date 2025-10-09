@@ -96,6 +96,7 @@ label {
     background: rgba(255, 255, 255, 0.35);
     border-radius: 10px;
     margin-bottom: 15px;
+    flex: 1;
 }
 
 .div-tareas {
@@ -147,10 +148,19 @@ label {
 
 /* FOOTER */
 
-footer {
-    position: relative;
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.fixed {
+    position: fixed;
+    margin-top: 40px;
+    padding: 30px;
     width: 100%;
-    padding: 25px;
     text-align: center;
-    font-weight: 500;
+    bottom: 0;
 }
