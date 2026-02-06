@@ -7,6 +7,7 @@
     <title>Lista de tareas</title>
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mediaQueries/mediaQueries.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <h1>Lista de tareas</h1>
 
         <section class="section-principal">
-            <form autocomplete="off">
+            <form autocomplete="off" id="form">
                 <label>Ingresar aquí la nueva tarea</label>
                 <div class="div-container">
                     <input type="text" class="input" id="input" placeholder="Por ej: corregir bugs">
@@ -26,7 +27,7 @@
         <section id="tareas-container"></section>
     </main>
 
-    <footer class="fixed footer-flex" id="footer">
+    <footer class="footer-flex" id="footer">
         <p>To do list by
             <a href="https://www.linkedin.com/in/facundo-d-addese-797b241aa/" target="_blank">Facundo D'addese</a>
         </p>
@@ -34,7 +35,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index.js"></script>
-
 </body>
 
 </html>

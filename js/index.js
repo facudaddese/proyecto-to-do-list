@@ -1,14 +1,15 @@
+const form = document.getElementById("form");
 const input = document.getElementById("input");
 const btnAgregar = document.getElementById("btn-agregar");
 const tareasContainer = document.getElementById("tareas-container");
 const footer = document.getElementById("footer");
 
-btnAgregar.addEventListener("click", (event) => {
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+})
 
+btnAgregar.addEventListener("click", () => {
     if (input.value.trim() != "") {
-
-        footer.classList.remove("fixed");
-
         const tareaContainer = document.createElement("div");
         tareaContainer.classList.add("tareas-container", "visible");
 
@@ -32,8 +33,8 @@ btnAgregar.addEventListener("click", (event) => {
         tareaContainer.appendChild(divBtn);
 
         tareasContainer.appendChild(tareaContainer);
-
         input.value = "";
+        document.body.classList.add(".body");
 
         btnEliminar.addEventListener("click", () => {
             Swal.fire({

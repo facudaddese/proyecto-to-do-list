@@ -1,0 +1,46 @@
+@media (max-width:600px) {
+
+    .section-principal {
+        width: 80vw;
+    }
+
+    .tareas-container.visible {
+        min-width: 0;
+        width: 90vw;
+        margin: 0 0 15px 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .div-tareas {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 7px;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+
+    .div-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .section-principal {
+        padding: 40px;
+    }
+}
